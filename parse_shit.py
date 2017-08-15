@@ -12,7 +12,6 @@ mockSection = {
 def parse():
   courseNames = {}
   sections = []
-
   html = codecs.open('class_schedule.htm')
   soup = BeautifulSoup(html)
   for header in soup.find_all('th'):
